@@ -20,7 +20,7 @@ app.get('/api/quizzes', (req, res) => {
 
 //below chunk is 'get' quizzes by id 
 app.get('/api/quizzes/:id', (req, res) => {
-    const quiz = quizzes .find(q => q.id === parseInt(req.params.id));
+    const quiz = quizzes.find(q => q.id === parseInt(req.params.id));
     if (!quiz) return res.status(404).send('Quiz not found');
     res.json(quiz); // RESTful GET to retrieve a single quiz by id
 });
@@ -59,7 +59,7 @@ app.post('/api/quizzes/:id/submit', (req, res) => {
 
 //Start the server
 app.listen(port, () => {
-    console.log(`This only logs at beginning of Node session thingy- Server running on ${port}`);
+    console.log(`This only logs at beginning of Node session thingy- and automatically when something is changed in GIT- Server running on ${port}`);
 });
 
 // The below chunk is not a part of current API program, may be educational tho
