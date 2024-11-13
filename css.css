@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(196, 216, 216);
+}
+
+.form {
+    background-color: rgb(214, 227, 227);
+    padding: 20px;
+    border-radius: 2%;
+    width: 510px;
+
+    /* visibility: hidden; */
+}
+
+.inputFields{
+    width: 500px;
+    height:25px;
+}
+
+#submit{
+height: 40px;
+width: 100px;
+flex-direction: column;
+justify-content:center
+}
+
+#formCenterItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">    
+
+<title>CreateAQuiz</title>
+    <h1> Welcome to: CreateAQuiz </h1>
+    
+</head>
+<body>
+
+    <p> INSTRUCTIONS FOR EMILY: To get this started, get the GO server started (may not be necessary for early versions of this program, but eventually it should be connected to Golang), then begin the LIVE SERVER, and then stop the live server but keep the browser up. Once you've done that, the browser should work based whatever code was written before the LIVE SERVER was disabled. Disabling the Live Server is to prevent unwanted reloads</p>
+<br> <p> If things aren't working, it's probably bec you accidentally changed some small thing without realizing it. Check that functions are called, names match, etc.</p>
+<br><p>The goal of this program is to take user input in the form of Q and A Sets, save the data in a database between reloads, and eventually offer the data in "test" form, where a user can guess at the correct answer. There should be two modes: Test Creator and Test Taker</p>
+    <form class="form">
+        <h2 id="formCenterItem">Create Q&A Set</h2>
+        <p>Type your question below:</p>
+        <input name="question" class="inputFields" type="text" placeholder="the question">
+        <br><br>
+        <p>Type your answer below:</p>
+        <input name="answer"  class="inputFields" type="text" placeholder="the true answer">
+        <br><br>
+        <p>Type your FAKE answer below:</p>
+        <input name="fakeAnswer"  class="inputFields" type="text" placeholder="the false answer">
+        <br><br>
+
+        <div id="formCenterItem">
+            <button onclick="submitQNA()" id="submit" type="submit">Submit Quiz</button>
+        </div>
+    </form>
+
+    <div >
+        <p id="savedUserInput"></p>
+    </div>
+    
+    <script src="mainLogic.js"></script>
+</body>
+
+</html>
