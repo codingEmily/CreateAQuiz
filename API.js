@@ -1,3 +1,4 @@
+// YA'LL I got this direct from chatGPT and it's not even connected to my project, I just use it as a reference lol
 import express, { json } from 'express';
 
 const app = express();
