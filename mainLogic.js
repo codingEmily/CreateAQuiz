@@ -1,3 +1,12 @@
+// So this is connected to HTML and kinda works, but the data isn't saved or anything. This is stupid, but I'm confused by how to connect the 
+//server/browsers/idk-what-to-call-it >> Basically, when I open the html file by clicking "Live Server" it automatically runs on the 
+//http://127.0.0.1:5500/html.html URL, and then the URL I had created from tutorials/chatGPT was "http://localhost:8080/quiz", so I need to somehow have all the
+// files on the same URL, which I'm sure I can do, but then I start worrying ab it being on a private server, so I'm trying to set it up publically thru Vercel, 
+//and that doesn't work... basically I haven't planned this project well, and idk where to go from here. I'm trying to use only HTML, CSS, JavaScript,
+// Node.js + Express, GO and MongoDB. My README file should kind of explain it, but my current goal is to be saving user data and eventually have a dual usage,
+// where some people create Tests, and other people can take them and get graded. It might be too advanced for me rn, but I am a all or nothing person, and I've 
+// been doing the bare minimum in this course until I thought of this project that I find interesting, so I hate to quit on it
+
 let questionNumber = 1;
 
 const formEl = document.querySelector('.form');
