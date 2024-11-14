@@ -1,3 +1,7 @@
+// this is either from a YT video or chatGPT or both, it's not connected to my project in anyway, 
+// I'm tryyyying to figure out how to connect everything but struggling for no reason. I know that at I have been able to work the CRUD stuff in the terminal, 
+//but that's not helpful to me
+
 package main
 
 import (
